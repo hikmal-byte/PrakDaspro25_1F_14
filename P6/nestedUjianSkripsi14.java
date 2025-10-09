@@ -8,13 +8,14 @@ public class nestedUjianSkripsi14 {
 
         System.out.print("Apakah mahasiswa sudah bebas kompen? (Ya/Tidak): ");
         String bebasKompen = Hikmal.nextLine().trim();
+
         
-        System.out.print("Masukkan jumlah log bimbingan Pembimbing 1");
-        int bimbinganP1 = Hikmal.nextInt();
-        System.out.print("Masukkan jumlah log bimbingan Pembimbing 2");
-        int bimbinganP2 = Hikmal.nextInt();
         String pesan;
         if (bebasKompen.equalsIgnoreCase("Ya")) {
+             System.out.print("Masukkan jumlah log bimbingan Pembimbing 1");
+             int bimbinganP1 = Hikmal.nextInt();
+            System.out.print("Masukkan jumlah log bimbingan Pembimbing 2");
+            int bimbinganP2 = Hikmal.nextInt();
             if (bimbinganP1 >= 8 && bimbinganP2 >= 4) {
                 pesan = ("Semua syarat terpenuhi. Mahasiswa boleh mendaftar ujian skripsi");
             } else if (bimbinganP1 < 8 && bimbinganP2 < 4) {
